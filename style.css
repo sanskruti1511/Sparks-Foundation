@@ -1,0 +1,94 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    background-image: linear-gradient(rgba(44, 46, 44, 0.547), rgba(1, 5, 19, 0.9)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvDiTRzroIHl76TZyQkmRk9CUWtiZpnoQ3Zw&usqp=CAU);
+    
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    
+    padding-top: 6px;
+    background-color: rgba(32, 32, 32, 0.7);
+}
+
+.navlink {
+    flex: 2;
+    text-align: left;
+}
+
+.navlink ul li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+
+.navlink ul li a {
+    color: rgb(151, 151, 151);
+    font-size: 20px;
+    text-decoration: none;
+    
+
+}
+
+.navlink ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #807e78;
+    display: block;
+    margin: auto;
+}
+
+.navlink ul li a:hover::after {
+    width: 100%;
+
+}
+
+.box {
+    color: white;
+    width: 70%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.box h1 {
+    font-size: 40px;
+    margin-bottom: 45px;
+    font-family: Monospace;
+    letter-spacing: 1px;
+}
+
+.btn {
+    text-decoration: none;
+    border: 1.5px rgb(255, 255, 255) solid;
+    color: rgb(255, 254, 254);
+    
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    border: 1.5px rgb(74, 78, 75) solid;
+    background:black;
+    color: rgb(135, 145, 135);
+}
